@@ -1075,9 +1075,8 @@ function betslip(){
 
 
 function width() {
-    var width = document.getElementsByTagName("body")[0]
-    width.value = window.outerWidth;
-    if(width.value <= 600){
+    var width = document.documentElement.clientWidth
+    if(width <= 600){
         let element = document.getElementsByClassName("en")[0];
         element.classList.add("mobile");
     }
